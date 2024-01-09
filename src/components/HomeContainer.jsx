@@ -5,7 +5,7 @@ import SocialMediaLinks from './SocialMediaLinks';
 
 const HomeContainer = () => {
   return (
-    <div className='w-full flex flex-col-reverse md:flex-row fadeIn'>
+    <div className='w-full flex flex-col-reverse md:flex-row'>
         <div className='lg:pt-5 lg:pr-20 w-full md:w-2/3 flex flex-col md:justify-start items-start mb-4 md:mb-0'>
             <p className='text-3xl md:text-3xl leading-loose font-mono h-10'>
                 <MultiColorTypeWriter/>

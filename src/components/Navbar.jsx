@@ -45,13 +45,15 @@ const Navbar = () => {
       )}
 
       {/* Full Navbar for larger screens */}
-      <div className="fadeIn hidden lg:flex w-full h-14 bg-gray-600 opacity-70 rounded-full flex justify-around items-center shadow-lg">
+      <div className="hidden lg:flex w-full h-14 bg-gray-600 opacity-70 rounded-full flex justify-around items-center shadow-lg">
         <a className='text-teal-300 uppercase font-semibold font-mono text-3xl'>PORTFOLIO</a>
-        {navbar_buttons.map((button, index) => (
-          <a key={index} href={`#${button.name.toLowerCase()}`} className="text-white uppercase font-semibold hover:text-orange-200 transition duration-300 px-4 py-1">
-            {button.name}
-          </a>
-        ))}
+        <div>
+          {navbar_buttons.map((button, index) => (
+            <a key={index} href={`#${button.name.toLowerCase()}`} className="text-white uppercase font-semibold hover:text-orange-200 transition duration-300 px-4 py-1">
+              {button.name}
+            </a>
+          ))}
+        </div>
         <SearchBar/>
       </div>
     </div>
