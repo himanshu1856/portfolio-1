@@ -15,17 +15,5 @@
     animation: fadeIn 3s ease-in-out;
   }
 
-  @keyframes dropEffect {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-  
-  .navbarDrop {
-    animation: dropEffect 3s ease-out;
-  }
   
   
