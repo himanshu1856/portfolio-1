@@ -45,7 +45,7 @@ const Navbar = () => {
       )}
 
       {/* Full Navbar for larger screens */}
-      <div className="hidden lg:flex w-full h-14 bg-gray-600 opacity-70 rounded-full flex justify-around items-center shadow-lg">
+      <div className="hidden lg:flex w-full h-14 bg-gray-600 opacity-70 rounded-full justify-around items-center shadow-lg">
         <a className='text-teal-300 uppercase font-semibold font-mono text-3xl'>PORTFOLIO</a>
         <div>
           {navbar_buttons.map((button, index) => (
