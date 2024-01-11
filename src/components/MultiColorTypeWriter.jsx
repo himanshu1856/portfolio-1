@@ -47,7 +47,7 @@ const MultiColorTypeWriter = () => {
 
   return (
     <div>
-      <span style={{ color: texts[index].color }}>
+      <span className='text-sm md:text-xl lg:text-3xl' style={{ color: texts[index].color }}>
         {`${texts[index].text.substring(0, subIndex)}${blink ? '|' : ' '}`}
       </span>
     </div>

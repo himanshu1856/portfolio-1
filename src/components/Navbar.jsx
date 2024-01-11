@@ -18,12 +18,12 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full lg:flex justify-center items-center py-4 lg:py-6 px-10 lg:px-0">
+    <div className="w-full lg:flex justify-center items-center py-2 lg:py-6">
       {/* Hamburger Icon */}
       <div className="lg:hidden">
         <button onClick={() => setIsMobileMenuOpen(true)}>
           {/*hamburger menu */}
-          <span><RxHamburgerMenu color='white' size={42} /></span>
+          <span><RxHamburgerMenu color='white' size={36} /></span>
         </button>
       </div>
 
