@@ -1,4 +1,3 @@
-import './home.css'
 
 import profile_photo from '../../assets/profile_photo.jpg';
 import MultiColorTypeWriter from '../Typrewriter/typeWriter';
@@ -11,7 +10,7 @@ import GithubIcon from '../../assets/github.png'
 
 function Home() {
   return (
-    <div className="bg-slate-800 h-screen bg-custom  px-4 md:px-10 lg:px-20">
+    <div className=" h-screen bg-custom pt-20">
       <HomeContainer/>
     </div>
   )
