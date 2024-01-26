@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 const texts = [
   { text: 'Hey there !!  ....', color: '#B4D4FF' },
-  { text: 'This is my portfolio....', color: '#AAD7D9' },
   { text: 'In About Me section....', color: '#B6C4B6' },
   { text: 'You can see my experience and skills....', color: '#B6C4B6' },
   // Add more lines as needed

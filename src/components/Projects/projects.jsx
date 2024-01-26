@@ -1,6 +1,6 @@
 export default function Projects(){
     return(
-        <div>
+        <div className="text-white h-full">
             <h1>Projects</h1>
         </div>
     )
