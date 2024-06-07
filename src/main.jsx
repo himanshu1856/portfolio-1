@@ -11,15 +11,15 @@ import {
   RouterProvider
 } from 'react-router-dom'
 
-import Root from './components/Root/root'
+import Home from './components/Home/Home';
 import Projects from './components/Projects/projects';
-import HomeContainer from './components/Home/home';
+import HomeContainer from './components/Home/HomeContainer';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Home />,
     errorElement: <ErrorPage />,
     children: [
       {

@@ -1,4 +1,4 @@
-export default function SkillsCard({title,skills}){
+const SkillsCard = ({title,skills}) => {
     return(
         <div className="text-center w-42 rounded-lg h-full bg-gray-200 p-2">
             <p className="text-emerald-700 font-semibold underline underline-offset-4">{title}</p>
@@ -12,5 +12,7 @@ export default function SkillsCard({title,skills}){
                 </ul>
             </div>
         </div>
-    );
+    )
 }
+
+export default SkillsCard

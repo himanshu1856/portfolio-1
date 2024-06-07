@@ -1,13 +1,14 @@
-import { useState } from "react";
-import SkillsCard from "../Skills/skillsCard";
+import { useState } from "react"
+
+import SwitchHeadings from './SwitchHeadings'
+import Experience from './Experience'
+import Skills from './Skills'
 
 export default function About() {
-    const [activeComponent, setActiveComponent] = useState('introduction');
+    const [activeComponent, setActiveComponent] = useState('experience');
 
     const renderComponent = () => {
         switch (activeComponent) {
-            case 'introduction':
-                return <Introduction />;
             case 'experience':
                 return <Experience />;
             case 'skills':
@@ -36,66 +37,7 @@ export default function About() {
     );
 }
 
-function SwitchHeadings({ switchComponents, currentComponent }) {
-    const headingText = ["Introduction", "Experience", "Skills", "Contact"];
-    return (
-        <>
-            <h1 className="underline underline-offset-8 text-center mb-10 text-slate-200 font-semibold leading-relaxed font-mono">Switch Tabs 👇</h1>
-            <ul className="list-none text-xl leading-relaxed text-slate-400 ">
-                {
-                    headingText.map((text, index) => {
-                        let customClass = currentComponent.toLowerCase() === text.toLowerCase() ? "text-slate-100" : "hover:text-slate-300";
-                        return (
-                            <li key={index} className={customClass}
-                                onClick={() => { switchComponents(text) }}
-                            >{text}</li>
-                        )
-                    })
-                }
-            </ul>
-        </>
-    )
-}
 
-function Introduction() {
-    return (
-        <>
-            <h1 className="text-2xl text-teal-300 opacity-70 tracking-wider">Introduction</h1>
-            <p className="mt-5 text-xl text-gray-400 leading-relaxed tracking-wider font-mono">
-                With a steadfast dedication to crafting exceptional digital experiences and a proven track record in <span className="text-gray-100">Full Stack web development</span> ,
-                I am an accomplished professional specializing in the <span className="text-gray-100"> MERN </span>(MongoDB, Express.js, React.js, Node.js) stack.
-                Over the past <span className="text-gray-100"> 3 years </span>, I have honed my skills and expertise, delivering robust solutions that drive innovation and propel businesses forward in the ever-evolving landscape of technology.
-            </p>
-
-        </>
-    )
-}
-
-function Experience() {
-    return (
-        <>
-            <h1 className="text-2xl text-teal-300 opacity-70 tracking-wider">Experience</h1>
-        </>
-    )
-}
-
-function Skills() {
-    const fronEnd = ["HTML", "CSS", "JavaScript", "BootStrap", "Tailwind", "Scss", "Jquery"];
-    const backEnd = ["Node js", "Express js", "REST Api"];
-    const cloudPlatform = ["AWS"];
-    const devTools = ["VS Code", "Git/Github", "Docker"]; 
-    return (
-        <>
-            <h1 className="text-2xl text-teal-300 opacity-70 tracking-wider">Skills</h1>
-            <div className="grid grid-cols-4 gap-4 pt-5 p-10 w-full h-full overflow-auto" >
-                <SkillsCard title={"Front End"} skills={fronEnd}/>
-                <SkillsCard title={"Back End"} skills={backEnd}/>
-                <SkillsCard title={"Dev Tools"} skills={devTools}/>
-                <SkillsCard title={"Cloud"} skills={cloudPlatform}/>
-            </div>
-        </>
-    )
-}
 
 function ContactMe() {
     return (

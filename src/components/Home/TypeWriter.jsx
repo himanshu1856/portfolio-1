@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
-const texts = [
-  { text: 'Hey there !!  ....', color: '#B4D4FF' },
-  { text: 'In About Me section....', color: '#B6C4B6' },
-  { text: 'You can see my experience and skills....', color: '#B6C4B6' },
-  // Add more lines as needed
-];
-
-const MultiColorTypeWriter = () => {
+const TypeWriter = () => {
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [blink, setBlink] = useState(true);
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+
+  const texts = [
+    { text: 'Hey there !!  ....', color: '#B4D4FF' },
+    { text: 'In About Me section....', color: '#B6C4B6' },
+    { text: 'You can see my experience and skills....', color: '#B6C4B6' },
+    // Add more lines as needed
+  ];
 
   useEffect(() => {
     if (isDeleting) {
@@ -53,4 +53,4 @@ const MultiColorTypeWriter = () => {
   );
 };
 
-export default MultiColorTypeWriter;
+export default TypeWriter;
