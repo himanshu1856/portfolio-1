@@ -4,8 +4,8 @@ import './home.css'
 
 function Home() {
     return (
-        <div className='p-5  h-screen background-pattern'>
-            <div className='flex justify-center h-1/6'>
+        <div className='py-2 px-3 md:p-5  h-screen background-pattern'>
+            <div className='flex justify-center h-10 md:h-1/6'>
                 <Navbar/>
             </div>
             <div className='h-5/6'>

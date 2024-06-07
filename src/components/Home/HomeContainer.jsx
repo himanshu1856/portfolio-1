@@ -7,7 +7,7 @@ import SocialMediaLinks from './SocialMediaLinks'
 const HomeContainer = () => {
   return (
     <div className='w-full flex flex-col-reverse md:flex-row justify-around'>
-        <div className='w-full md:w-3/4 px-10 flex flex-col md:justify-start items-start mb-4 md:mb-0'>
+        <div className='w-full md:w-3/4 md:px-10 flex flex-col md:justify-start items-start mb-4 md:mb-0'>
             <div className='text-3xl md:text-3xl leading-loose font-mono h-14 md:h-10'>
                 <TypeWriter/>
             </div>
@@ -21,7 +21,7 @@ const HomeContainer = () => {
             <div className='p-2 flex justify-center md:border-4 rounded-full border-solid border-teal-500 opacity-80'>
                 <img src={profile_photo} alt='Profile photo' className='rounded-full w-48 md:w-full object-cover'/>
             </div>
-            <p className='text-teal-300 text-center text-2xl tracking-widest'>Himanshu Sharma</p>
+            <p className='text-teal-300 text-center text-xl md:text-2xl tracking-widest'>Himanshu Sharma</p>
         </div>
     </div>
   );

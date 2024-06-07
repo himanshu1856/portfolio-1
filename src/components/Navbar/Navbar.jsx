@@ -1,32 +1,51 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
+import { GiHamburgerMenu } from "react-icons/gi";
+
+import OffCanvas from "../Home/OffCanvas";
+import { useState } from "react";
 
 const Navbar = () => {
-
+  const [offCanvasState, setOffCanvasState] = useState(false)
   const navbar_buttons = [
     {
-      "name": "Home"
+      name: "Home",
     },
     {
-      "name": "Projects"
+      name: "Projects",
     },
     {
-      "name": "About"
-    }
+      name: "About",
+    },
   ];
 
+  const hamburgerHandler = () =>{
+    let state = offCanvasState
+    setOffCanvasState(!offCanvasState);
+  }
+
   return (
-      <div className="lg:flex w-2/4 h-10 bg-gray-600 opacity-70 rounded-full justify-around items-center shadow-lg">
-        <a className='text-teal-300 uppercase font-semibold font-mono text-2xl'>PORTFOLIO</a>
-          {navbar_buttons.map((button, index) => (
-            <NavLink key={index} to={`${button.name.toLowerCase()}`} className="text-white uppercase font-semibold hover:text-orange-200 transition duration-300 px-4 py-1">
-              {button.name}
-            </NavLink>
-          ))}
+    <>
+      <div className="hidden md:block lg:flex w-2/4 h-10 bg-gray-600 opacity-70 rounded-full justify-around items-center shadow-lg">
+        <a className="text-teal-300 uppercase font-semibold font-mono text-2xl">
+          PORTFOLIO
+        </a>
+        {navbar_buttons.map((button, index) => (
+          <NavLink
+            key={index}
+            to={`${button.name.toLowerCase()}`}
+            className="text-white uppercase font-semibold hover:text-orange-200 transition duration-300 px-4 py-1"
+          >
+            {button.name}
+          </NavLink>
+        ))}
       </div>
-  )
-}
-
-
+      <div className="md:hidden w-full">
+        <GiHamburgerMenu size={32} color="teal" onClick={hamburgerHandler} />
+      </div>
+      {offCanvasState === true ? <OffCanvas hamburgerHandler={hamburgerHandler}/> : "" }
+    </>
+  );
+};
 
 export default Navbar;

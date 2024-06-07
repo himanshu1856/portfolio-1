@@ -10,7 +10,7 @@ const SocialMediaLinks = () => {
             <p className='mb-4 text-center font-semibold text-slate-200 text-xl uppercase underline underline-offset-8'>
                 Let's Connect
             </p>
-            <div className='flex flex-wrap justify-around lg:mt-5'>
+            <div className='flex flex-wrap justify-around md:mt-5 '>
                 <a className='bg-slate-200 h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 flex justify-center items-center rounded-full'>
                     <img src={GithubIcon} className='h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12'></img>
                 </a>
