@@ -6,7 +6,8 @@ import SocialMediaLinks from './SocialMediaLinks'
 
 const HomeContainer = () => {
   return (
-    <div className='w-full flex flex-col-reverse md:flex-row justify-around'>
+    <div className='flex h-full items-center'>
+        <div className='w-full flex flex-col-reverse md:flex-row justify-around '>
         <div className='w-full md:w-3/4 md:px-10 flex flex-col md:justify-start items-start mb-4 md:mb-0'>
             <div className='text-3xl md:text-3xl leading-loose font-mono h-14 md:h-10'>
                 <TypeWriter/>
@@ -23,6 +24,7 @@ const HomeContainer = () => {
             </div>
             <p className='text-teal-300 text-center text-xl md:text-2xl tracking-widest'>Himanshu Sharma</p>
         </div>
+    </div>
     </div>
   );
 }

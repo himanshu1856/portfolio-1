@@ -26,15 +26,15 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden md:block lg:flex w-2/4 h-10 bg-gray-600 opacity-70 rounded-full justify-around items-center shadow-lg">
-        <a className="text-teal-300 uppercase font-semibold font-mono text-2xl">
+      <div className="hidden md:flex md:px-2 lg:flex w-1/2 lg:w-2/4 h-10 bg-gray-600 opacity-70 rounded-full justify-around items-center shadow-lg">
+        <a className="text-teal-300 uppercase font-semibold font-mono mg:text-xl lg:text-2xl">
           PORTFOLIO
         </a>
         {navbar_buttons.map((button, index) => (
           <NavLink
             key={index}
             to={`${button.name.toLowerCase()}`}
-            className="text-white uppercase font-semibold hover:text-orange-200 transition duration-300 px-4 py-1"
+            className="lg:text-xl text-white uppercase font-semibold hover:text-orange-200 transition duration-300 px-4 py-1"
           >
             {button.name}
           </NavLink>
