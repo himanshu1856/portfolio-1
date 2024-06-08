@@ -1,8 +1,8 @@
-import InstagramIcon from '../../assets/instagram.png'
-import TwitterIcon from '../../assets/twitter.png'
-import LinkedinIcon from '../../assets/linkedin.png'
-import GmailIcon from '../../assets/gmail.png'
-import GithubIcon from '../../assets/github.png'
+import InstagramIcon from '../../assets/icons/instagram.png'
+import TwitterIcon from '../../assets/icons/twitter.png'
+import LinkedinIcon from '../../assets/icons/linkedin.png'
+import GmailIcon from '../../assets/icons/gmail.png'
+import GithubIcon from '../../assets/icons/github.png'
 
 const SocialMediaLinks = () => {
     return (

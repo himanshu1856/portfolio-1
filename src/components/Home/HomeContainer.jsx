@@ -1,5 +1,5 @@
 
-import profile_photo from '../../assets/profile_photo.jpg';
+import profile_photo from '../../assets/images/profile_photo.jpg';
 import TypeWriter from './TypeWriter';
 import SocialMediaLinks from './SocialMediaLinks'
 
