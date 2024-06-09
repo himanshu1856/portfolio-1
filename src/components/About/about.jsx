@@ -27,11 +27,11 @@ export default function About() {
     };
 
     return (
-        <div className="bg-gray-600 h-full p-5 rounded-lg w-full">
-            <div className="w-full h-10 rounded-lg flex items-center">
+        <div className="bg-gray-600 h-full p-5 rounded-lg w-full flex flex-col">
+            <div className="w-full h-10  rounded-lg flex items-center">
                 <SwitchHeadings switchComponents={switchComponents} currentComponent={activeComponent} />
             </div>
-            <div className="rounded-lg mr-2 w-full">
+            <div className="rounded-lg w-full flex-1 overflow-auto mt-5">
                 {renderComponent()}
             </div>
         </div>

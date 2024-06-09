@@ -8,7 +8,7 @@ function Skills() {
     const mobileApps = ["React Native"]
     return (
         <>
-            <div className="flex flex-wrap justify-between  pt-5 w-full h-full" >
+            <div className="flex flex-wrap justify-between w-full h-full rounded-md" >
                 <SkillsCard title={"Front End"} skills={fronEnd}/>
                 <SkillsCard title={"Back End"} skills={backEnd}/>
                 <SkillsCard title={"Dev Tools"} skills={devTools}/>

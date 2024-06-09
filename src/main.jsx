@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './main.css'
 
 import ErrorPage from './components/ErrorPage/error-page';
-import About from './components/About/about';
+import About from './components/About/About';
 
 import {
   createBrowserRouter,

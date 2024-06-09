@@ -8,7 +8,7 @@ function Home() {
             <div className='flex justify-center h-10 md:h-1/6'>
                 <Navbar/>
             </div>
-            <div className='h-5/6'>
+            <div className='h-5/6 mt-8 md:mt-0'>
                 <Outlet/>
             </div>
         </div>
